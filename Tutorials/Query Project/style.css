@@ -1,0 +1,122 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+/*Headder*/
+.header {
+   
+    width: 100%;
+    background: linear-gradient(90deg,#06165f 0%,#3c00bc 100%);
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+
+}
+
+.header__logo{
+    color:white;
+}
+
+
+.header__button{
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 0;
+}
+.header__button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.header__button--submit{
+    background: orange;
+}
+
+.header__button--signIn{
+    background: green;
+    color: white;
+}
+
+/*General*/
+
+.mainContainer{
+    margin: auto;
+}
+
+/*Search*/
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #EAE8F6;
+}
+
+.search__title{
+    margin-bottom: 10px;
+}
+
+.search__input{
+    padding: 8px 35px 8px 15px;
+    border: 1px solid lightgray;
+    min-width: 300px;
+    border-radius: 20px;
+}
+.search__searchIcon{
+    position: relative;
+    right: 35px;
+
+}
+
+/*FAQ*/
+
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    max-width: 1200px;
+}
+
+.faq__list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.faq__list-item{
+    min-height: 8rem;
+    border-radius: 5px;
+    width:300px;
+    gap:2pem;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/*Footer*/
+
+.footer{
+    padding: 20px;
+    background: linear-gradient(90deg,#06165f 0%,#3c00bc 100%);
+
+}
+
+.footer__content{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
