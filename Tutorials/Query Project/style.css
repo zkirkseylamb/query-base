@@ -6,7 +6,6 @@ html, body {
 
 /*Headder*/
 .header {
-   
     width: 100%;
     background: linear-gradient(90deg,#06165f 0%,#3c00bc 100%);
 }
@@ -14,17 +13,39 @@ html, body {
 .header__inner{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
     margin: auto;
     max-width: 1200px;
-    padding: 0 20px;
+    gap: 1rem;
+}
 
+@media screen and (min-width: 400px) {
+    .header__inner{
+        justify-content: space-between;
+        padding: 0 20px;
+    }
 }
 
 .header__logo{
     color:white;
+    margin-top: 0px;
 }
 
+@media screen and (min-width: 400px) {
+    .header__logo{
+        margin-top: 20px;
+    }
+}
+
+.header__buttonGrp{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
 
 .header__button{
     padding: 7px 10px;
@@ -53,6 +74,13 @@ html, body {
 
 /*Search*/
 
+.search__wrapper{
+    position: relative;
+    padding: 1px 45px 1px 1px;
+    max-width: 350px;
+    width: 100%;
+}
+
 .search{
     display: flex;
     flex-direction: column;
@@ -64,18 +92,20 @@ html, body {
 
 .search__title{
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .search__input{
-    padding: 8px 35px 8px 15px;
-    border: 1px solid lightgray;
-    min-width: 300px;
+    padding: 8px 30px 8px 8px;
     border-radius: 20px;
+    width: 100%;
+    border: 1px solid lightgray;
+
 }
 .search__searchIcon{
-    position: relative;
-    right: 35px;
-
+    position: absolute;
+    top: 7px;
+    right: 10px;
 }
 
 /*FAQ*/
@@ -94,12 +124,14 @@ html, body {
     justify-content: center;
     gap: 20px;
     list-style: none;
+    padding: 20px;
 }
 
 .faq__list-item{
     min-height: 8rem;
     border-radius: 5px;
-    width:300px;
+    width: 100%;
+    max-width: 300px;
     gap:2pem;
     padding: 20px;
     border: 1px solid #ccc;
@@ -113,10 +145,17 @@ html, body {
 
 }
 
+.footer__column{
+    flex-grow: 1;
+}
+
 .footer__content{
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     color: white;
     justify-content: space-between;
     max-width: 1200px;
     width: 100%;
+    margin: auto;
 }
